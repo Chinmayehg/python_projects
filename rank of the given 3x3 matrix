@@ -1,0 +1,35 @@
+#function for rank 3
+def rank():
+    if x!=0:
+        print("rank of the matrix is 3")
+        quit()
+  #function for rank 2,1      
+def rank2():
+    if y!=0:
+        print("rank of the matrix is 2")
+    else:
+        print("rank of the matrix is 1")
+#data input
+a=int(input("a11= "))
+b=int(input("a12= "))
+c=int(input("a13= "))
+d=int(input("a21= "))
+e=int(input("a22= "))
+f=int(input("a23= "))
+g=int(input("a31= "))
+h=int(input("a32= "))
+i=int(input("a33= "))
+#define x,y
+x=a*((e*i)-(f*h)-(b*((d*i)-(f*g)))+c*((h*d)-(e*g)))
+y=((a*e)-(b*d))
+#headings
+print("rank of the given matrix 3x3 is ")
+print(" |",a ,  b ,  c,"|\n","|",d ,   e ,  f ,"|\n","|",g ,   h ,   i ,"|\n")
+#calling the functions
+rank()
+rank2()
+
+input()
+
+
+
