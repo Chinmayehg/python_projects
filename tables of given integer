@@ -1,0 +1,19 @@
+def tables():
+    num=int(input("enter number to print tables starting from 2:"))
+    num1=num+169
+    if num==1:
+      print("the enterd num is less than 2 try again")
+    else:
+      print("the tables from 2 to the enterd number",num,"is:")
+    for num in range(2,num1):
+      if num1>1:
+        print("\nthe tables for",num,"is\n")
+      for i in range(1,11):
+          if num>1:
+             print(num,"x",i,"=",num*i)
+          else:
+            quit
+
+tables()
+input()        
+ 
